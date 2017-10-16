@@ -11,7 +11,7 @@ def check_bus(bus_id, stop_id):
     bustime_response = response.json()['bustime-response']
 
     if 'error' in bustime_response:
-        return minutes, None, None
+        return minutes, None
 
     predictions = bustime_response['prd']
 
