@@ -129,7 +129,7 @@ def check_bus(bus_id, stop_id):
     logger.info('Checking Bus %s at %s...' % (bus_id, stop_id))
     minutes, stpnm = CheckBusIntent.check_bus(bus_id, stop_id)
 
-    if not stpnm:
+    if stpnm:
         stpnm = stpnm.replace('&', 'and')
 
     logging.info('Minutes received: %s' % minutes)
