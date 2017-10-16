@@ -27,7 +27,7 @@ bus_minutes_message: |
     <say-as interpret-as="digits">{{stop_id}}</say-as>
     <break time="100ms"/>
     {{stop_name}}
-    <break time="600ms"/>
+    <break time="300ms"/>
     is {{minutes}}.
   </speak>
 
